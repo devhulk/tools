@@ -22,6 +22,5 @@ gitpush uses ```git add -A``` so don't use if you want to only add certain files
 
 ```
 mongodrop <dbname>
-mongocreate <dbname>
 gitpush <commit message>
 ```
