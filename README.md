@@ -14,6 +14,7 @@ add tools to your $PATH
 ```
 $HOME/bin/tools:
 ```
+open new terminal
 
 ## Current Tools
 
