@@ -1,5 +1,5 @@
 ## Handy Utilities
-
+run the following commands in order
 ```
 cd
 mkdir bin
