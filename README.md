@@ -15,7 +15,7 @@ add tools to your $PATH
 $HOME/bin/tools:
 ```
 
-##Current Tools
+## Current Tools
 
 ```
 mongodrop <dbname>
