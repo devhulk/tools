@@ -18,9 +18,12 @@ open new terminal
 
 ## Current Tools
 
+nodeupdate is meant for rasberry pi, it removes node-red and previous nodejs version then installs most current version of nodejs.
+
 gitpush uses ```git add -A``` so don't use if you want to only add certain files
 
 ```
 mongodrop <dbname>
 gitpush <commit message>
+nodeupdate
 ```
