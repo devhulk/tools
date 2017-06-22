@@ -1,0 +1,1 @@
+/Users/devhulk/dotfiles/colors/monokai.vim
