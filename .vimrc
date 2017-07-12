@@ -12,7 +12,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'scrooloose/nerdtree'
 Plugin 'jistr/vim-nerdtree-tabs'
-Plugin 'kristijanhusak/vim-hybrid-material'
+Plugin 'dracula/vim'
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
@@ -53,10 +53,9 @@ let mapleader = "-"
 :set shiftwidth=2
 :set softtabstop=2
 :set directory=/tmp
-:noh
 :syntax on
-:set background=dark
-:colorscheme monokai
+:color dracula
+:noh
 :set wildmode=list:longest
 :set hidden
 :set wildmenu
@@ -67,7 +66,7 @@ let mapleader = "-"
 :set autoindent
 :set ruler
 :set laststatus=2
-:set mouse=a
+:set mouse+=a
 :set number
 :map Y y$
 :map <Leader>n <plug>NERDTreeTabsToggle<CR>
@@ -110,3 +109,8 @@ nmap <silent> <leader>cw :call MarkWindowSwap()<CR>
 nmap <silent> <leader>pw :call DoWindowSwap()<CR>
 noremap ;; :%s:::g<Left><Left><Left>
 noremap ;' :%s:::cg<Left><Left><Left><Left>
+if has("mouse_sgr")
+    set ttymouse=sgr
+else
+    set ttymouse=xterm2
+  end
