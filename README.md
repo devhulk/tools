@@ -20,10 +20,13 @@ open new terminal
 
 nodeupdate is meant for rasberry pi, it removes node-red and previous nodejs version then installs most current version of nodejs.
 
+compile is for compiling you c++ files
+
 gitpush uses ```git add -A``` so don't use if you want to only add certain files
 
 ```
 mongodrop <dbname>
 gitpush <commit message>
 nodeupdate
+compile <compiledFileName> <fileToBeCompiled>
 ```
