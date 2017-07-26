@@ -1,0 +1,29 @@
+docker-machine create -d virtualbox dev
+docker-machine start dev
+eval "$(docker-machine env dev)"
+docker-machine ssh dev
+docker-machine ip dev
+
+docker network ls
+docker network inspect bridge
+docker network inspect host
+
+
+cd autoactionsvc
+docker build -t zerodevgroup/autoactionsvc .
+docker run -p 3000:3000 -d zerodevgroup/autoactionsvc
+docker exec -it  $(docker ps -q) bash
+
+docker ps -a
+docker stop $(docker ps -q)
+
+docker rm `docker ps --no-trunc -a -q`
+
+docker images
+docker rmi 'zerodevgroup/autoactionsvc'
+docker ps --no-trunc -a -q
+docker rm `docker ps --no-trunc -a -q`
+
+docker-machine regenerate-certs dev
+
+docker-machine regenerate-certs dev
