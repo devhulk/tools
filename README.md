@@ -12,7 +12,7 @@ vi .bash_profile
 add tools to your $PATH
 
 ```
-$HOME/bin/tools:
+$HOME/photon/tools:
 ```
 open new terminal
 
@@ -29,4 +29,6 @@ mongodrop <dbname>
 gitpush <commit message>
 nodeupdate
 compile <compiledFileName> <fileToBeCompiled>
+fp <processname>
+fport <portnumber>
 ```
