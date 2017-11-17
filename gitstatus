@@ -1,0 +1,19 @@
+#!/usr/local/bin/bash
+
+#I want to be able to specify a directory and need a flag for if I want to pull a specific directory or 
+#git pull for all directories in that folder.
+
+if [ "$1" == "-d" ]; then
+  for d in $2* ; do
+    cd "${d}"
+    git status
+  done
+fi
+
+#echo $1 
+
+#echo $2 
+
+#echo $3 
+
+
