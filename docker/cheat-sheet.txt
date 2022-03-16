@@ -10,8 +10,8 @@ docker network inspect host
 
 
 cd autoactionsvc
-docker build -t zerodevgroup/autoactionsvc .
-docker run -p 3000:3000 -d zerodevgroup/autoactionsvc
+docker build -t devhulk/test .
+docker run -p 3000:3000 -d devhulk/test
 docker exec -it  $(docker ps -q) bash
 
 docker ps -a
@@ -20,7 +20,7 @@ docker stop $(docker ps -q)
 docker rm `docker ps --no-trunc -a -q`
 
 docker images
-docker rmi 'zerodevgroup/autoactionsvc'
+docker rmi 'devhulk/test'
 docker ps --no-trunc -a -q
 docker rm `docker ps --no-trunc -a -q`
 
