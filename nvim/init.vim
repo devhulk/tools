@@ -267,10 +267,14 @@ nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 
 
-" Git Mappings "
-nmap <leader>gh :diffget //3<CR>
+" Git Mappings (status, commit, push)"
+nmap <leader>gs :G<CR>
+nmap <leader>gc :Git commit<CR>
+nmap <leader>gp :Git push<CR>
+
+" Git Merge Conflict Mappings"
 nmap <leader>gj :diffget //3<CR>
-nmap <leader>gf :G<CR>
+nmap <leader>gh :diffget //2<CR>
 
 "Nerd Commenter"
 
